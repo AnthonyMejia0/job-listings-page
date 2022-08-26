@@ -1,8 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .filter {
+    @apply hover:text-white hover:bg-desaturated-dark-cyan
+  }
+
+  .remove-button {
+    @apply p-[0.45rem] rounded-r-md text-white bg-desaturated-dark-cyan hover:bg-very-dark-grayish-cyan
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'League Spartan', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +22,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+li + li::before {
+  content: "·";
+  font-weight: 700;
+  margin-right: 0.75rem;
 }
