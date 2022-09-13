@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/AnthonyMejia0/job-listings-page)
-- Live Site URL: [](https://job-listings-page-jade.vercel.app/)
+- Solution URL: [Solution](https://github.com/AnthonyMejia0/job-listings-page)
+- Live Site URL: [Live Site](https://job-listings-page-jade.vercel.app/)
 
 ## My process
 
