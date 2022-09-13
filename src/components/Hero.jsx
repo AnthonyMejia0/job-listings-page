@@ -4,7 +4,7 @@ import Filter from "./Filter";
 import JobCard from "./JobCard";
 
 function Hero() {
-  const [jobs, setJobs] = useState(data);
+  const [jobs] = useState(data);
   const [filteredJobs, setFilteredJobs] = useState(data);
   const [roleFilter, setRoleFilter] = useState("");
   const [levelFilter, setLevelFilter] = useState("");
@@ -36,7 +36,7 @@ function Hero() {
     }
 
     setFilteredJobs(filteredJobs);
-  }, [roleFilter, levelFilter, languageFilter]);
+  }, [roleFilter, levelFilter, languageFilter, jobs]);
 
   return (
     <main className="relative py-10 bg-inherit">
